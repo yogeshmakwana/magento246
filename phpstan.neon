@@ -1,0 +1,9 @@
+parameters:
+    level: 5
+    paths:
+        - app/code/Namicargo/Shipping
+    phpVersion: 80200
+    checkMissingIterableValueType: false
+    checkGenericClassInNonGenericObjectType: false
+    ignoreErrors:
+        - '#Property .* has no type specified#'

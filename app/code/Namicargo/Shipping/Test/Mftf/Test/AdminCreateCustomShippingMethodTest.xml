@@ -1,0 +1,17 @@
+<tests xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:mftf:test-schema">
+    <test name="AdminCreateCustomShippingMethodTest" type="functional">
+        <annotations>
+            <annotation tag="group" value="Namicargo_Shipping" />
+        </annotations>
+        <arguments>
+            <argument name="adminUsername" type="data" value="AdminUsername" />
+            <argument name="adminPassword" type="data" value="AdminPassword" />
+        </arguments>
+        <steps>
+            <amOnPage url="{{AdminLoginPage}}" stepKey="goToAdmin" />
+            <fillField selector="{{AdminLoginPage.username}}" stepKey="fillUsername" />
+            <fillField selector="{{AdminLoginPage.password}}" stepKey="fillPassword" />
+            <click selector="{{AdminLoginPage.loginButton}}" stepKey="clickLoginButton" />
+        </steps>
+    </test>
+</tests>
